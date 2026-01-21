@@ -1,7 +1,10 @@
+import Solve from "../public/components/Solve.jsx";
+import Tictactoe from "../public/components/Tictactoe.jsx";
+
 function App() {
 	return (
 		<>
-			<h1 class="text-3xl font-bold underline">Hello world!</h1>
+			<Tictactoe />
 		</>
 	);
 }
