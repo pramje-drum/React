@@ -48,7 +48,9 @@ const tictactoe = () => {
 	return (
 		<>
 			<div className="flex flex-col items-center justify-center min-h-screen bg-slate-50 font-sans">
-				<div className={`mb-6 px-6 py-2 rounded-full text-xl font-bold shadow-sm border-2 ${winner ? 'bg-green-100 text-green-700 border-green-200' : 'bg-white text-slate-700 border-slate-200'}`}>
+				<div
+					className={`mb-6 px-6 py-2 rounded-full text-xl font-bold shadow-sm border-2 ${winner ? "bg-green-100 text-green-700 border-green-200" : "bg-white text-slate-700 border-slate-200"}`}
+				>
 					{status}
 				</div>
 				<div className="bg-slate-200 p-2 rounded-xl shadow-lg gap-3 m-3.5">
