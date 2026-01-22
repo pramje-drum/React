@@ -12,4 +12,9 @@
 - Virtual DOM
 - React vs Other Frameworks
 - Props - children & default
+- State Immutability
+- useState Hook
+- update state using events
+- Lifting state up
+- contorlled vs uncontrolled component.
 - 
