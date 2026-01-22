@@ -1,21 +1,19 @@
-const ChildContent = () => {
+import { ShoppingData } from "../ShoppingData";
+const ChildContent = ({ category }) => {
+	const listItems = ShoppingData.map((e) => {
+		if (e.category === category)
+			return (
+				<li className="flex justify-evenly">
+					<p>{e.name}</p>
+					<p>{e.price}</p>
+				</li>
+			);
+	});
+
 	return (
 		<div>
-			<div className="flex justify-evenly">
-				<p>Apple</p>
-				<p>$1</p>
-			</div>
-			<div className="flex justify-evenly">
-				<p>Orange</p>
-				<p>$2</p>
-			</div>
-			<div className="flex justify-evenly">
-				<p>Spinach</p>
-				<p>$2</p>
-			</div>
-			<div className="flex justify-evenly">
-				<p>Peas</p>
-				<p>$3</p>
+			<div className="">
+				<li>{listItems}</li>
 			</div>
 		</div>
 	);

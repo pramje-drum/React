@@ -8,13 +8,15 @@ const ListArea = () => {
 
         {/* label-container */}
       <div>
-        <Labels/>
+        <Labels />
       </div>
 
 
       {/* list area where all items will be shown */}
       <div>
-        <ContentComponent/>
+        <ContentComponent category = "Fruits" />
+        <ContentComponent category = "Vegetables" />
+
       </div>
     </div>
   )
