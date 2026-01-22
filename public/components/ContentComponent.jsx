@@ -1,7 +1,7 @@
 import React from 'react'
 import ChildContent from './ChildContent'
 
-const ContentComponent = ({category}) => {
+const ContentComponent = ({category, isStock}) => {
   return (
     <div>
       {/* heading */}
@@ -11,7 +11,7 @@ const ContentComponent = ({category}) => {
       
       {/* child content */}
       <div>
-        <ChildContent category = {category}/>
+        <ChildContent category = {category} isStock = {isStock}/>
       </div>
     </div>
   )

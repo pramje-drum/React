@@ -1,25 +1,21 @@
-import ContentComponent from "./ContentComponent"
-import Labels from "./Labels"
+import ContentComponent from "./ContentComponent";
+import Labels from "./Labels";
 
-const ListArea = () => {
-  return (
-    <div>
+const ListArea = ({ isStock }) => {
+	return (
+		<div>
+			{/* label-container */}
+			<div>
+				<Labels />
+			</div>
 
+			{/* list area where all items will be shown */}
+			<div>
+				<ContentComponent category="Fruits" isStock={isStock} />
+				<ContentComponent category="Vegetables" isStock={isStock} />
+			</div>
+		</div>
+	);
+};
 
-        {/* label-container */}
-      <div>
-        <Labels />
-      </div>
-
-
-      {/* list area where all items will be shown */}
-      <div>
-        <ContentComponent category = "Fruits" />
-        <ContentComponent category = "Vegetables" />
-
-      </div>
-    </div>
-  )
-}
-
-export default ListArea
+export default ListArea;
