@@ -5,7 +5,8 @@ import Tictactoe from "../public/components/TicTacToeComponents/Tictactoe.jsx";
 function App() {
 	return (
 		<>
-			<ShoppingProject />
+			{/* <ShoppingProject /> */}
+			<Solve/>
 		</>
 	);
 }

@@ -17,4 +17,5 @@
 - update state using events
 - Lifting state up
 - contorlled vs uncontrolled component.
-- 
+- React Hook Form
+- onSubmit,error handling, validation(in react hook forms)
