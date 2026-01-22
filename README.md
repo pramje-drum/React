@@ -8,7 +8,6 @@
 
 
 # Day - 2
-
 - Virtual DOM
 - React vs Other Frameworks
 - Props - children & default
