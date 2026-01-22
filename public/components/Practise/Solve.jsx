@@ -25,27 +25,17 @@ const Solve = () => {
 	// 	setCount(count + 1);
 	// }
 
-  // const [count, setcount] = useState(0);
+	// const [count, setcount] = useState(0);
 
-  // function temp(){
-  //   setcount(count + 1);
-  // }
+	// function temp(){
+	//   setcount(count + 1);
+	// }
 
 	return (
 		<div>
-
-
-
-
-    
-
-
-
-
-      {/* <h1>updated Together</h1>
+			{/* <h1>updated Together</h1>
       <Solve2 count={count} onClick ={temp}/>
       <Solve2 count={count} onClick ={temp}/> */}
-
 
 			{/* <button onClick={solve}>you clicked {count} times</button> */}
 
