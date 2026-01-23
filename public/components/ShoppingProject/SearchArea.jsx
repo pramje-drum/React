@@ -16,6 +16,7 @@ const SearchArea = ({ stockedFlag, setStockedFlag, setItem }) => {
 			{/* filter option */}
 			<div>
 				<input
+				on
 					type="checkbox"
 					className=""
 					onClick={() => {

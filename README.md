@@ -18,3 +18,7 @@
 - contorlled vs uncontrolled component.
 - React Hook Form
 - onSubmit,error handling, validation(in react hook forms)
+
+# Day - 3
+- Event Handling & Event Object
+- Made the counter project!!!
