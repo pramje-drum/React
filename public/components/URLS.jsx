@@ -1,1 +1,1 @@
-export const Dummy_JSON = "https://dummyjson.com/todos"
+export const Dummy_JSON = "https://ummyjson.com/todos"

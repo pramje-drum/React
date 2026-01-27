@@ -1,14 +1,12 @@
 // import { useState } from "react";
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Solve2 from "./Solve2.jsx";
 // import React, { useState } from "react";
 // import { useForm } from "react-hook-form";
-
+import { Dummy_JSON } from "../URLS.jsx";
 // const INITIAL_LIST = [];
 
 const Solve = () => {
-
-	
 	// const user = {
 	// 	name: "MS Dhoni",
 	// 	imageUrl:
@@ -83,8 +81,40 @@ const Solve = () => {
 	// 	setTotal((total) => total + 1);
 	// };
 
+	// const [item, setItem] = useState(true);
+
+	// useEffect(() => {
+	// 	fetch(Dummy_JSON)
+	// 		.then((res) => res.json())
+	// 		.then((data) => console.log(data))
+	// 		.then(() => alert("Heloo World"))
+	// 		.catch((error) => console.log("OOPS some Error Occured!" + error));
+	// }, [item]);
+
+	const [item, setItem] = useState(true);
+
+	const getData = async () => {
+		try {
+			let response = await fetch(Dummy_JSON);
+			if (!response.ok) throw new Error("Network not Responding");
+			let Data = await response.json();
+			console.log(Data);
+		} catch (error) {
+			console.log(error);
+		} finally {
+			alert("Operation Completed!!");
+		}
+	};
+
+	useEffect(() => {
+		getData();
+	}, [item]);
 	return (
 		<div>
+			<button onClick={() => setItem(!item)} className="bg-gray-500 border-2 ">
+				Change
+			</button>
+
 			{/* <button onClick={handleClick}>Update Count!!</button>
 			<p>Count is : {count}</p>
 			<br />

@@ -31,3 +31,8 @@
 
 # Day-4
 - useContext Hook in React
+- practically used and practised useContext Hook in CodeBase!
+- Now will learn API Fetching and Error Handling in React.
+- called an API using using fetch method and useEffect
+- fetched api using async await plus try and catch method!!
+- 
