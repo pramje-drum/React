@@ -22,3 +22,12 @@
 # Day - 3
 - Event Handling & Event Object
 - Made the counter project!!!
+- used preventDeafult FUnctionality
+- made a form and then used preventDefault in handleSubmit Function!!
+- useEffect 
+- cleanup function
+- dependency array!!
+- fetched an api using useEffect!
+
+# Day-4
+- useContext Hook in React

@@ -1,9 +1,14 @@
 // import { useState } from "react";
+// import { useEffect, useState } from "react";
 import Solve2 from "./Solve2.jsx";
-import React from "react";
+// import React, { useState } from "react";
 // import { useForm } from "react-hook-form";
 
+// const INITIAL_LIST = [];
+
 const Solve = () => {
+
+	
 	// const user = {
 	// 	name: "MS Dhoni",
 	// 	imageUrl:
@@ -44,36 +49,69 @@ const Solve = () => {
 	// 	await new Promise((resolve) => {setTimeout(resolve, 2000)})
 	// 	alert("Submittng the Data")
 	// 	console.log("Submitting the form", data);
-	// }
+	// }\
+
+	// const [value, setValue] = useState("");
+	// const [listItems, setListItems] = useState(INITIAL_LIST);
+	// const handleChange = (e) => {
+	// 	setValue(e.target.value);
+	// };
+
+	// const handleSubmit = (e) => {
+	// 	if (value) {
+	// 		setListItems(listItems.concat(value))
+	// 	}
+	// 	e.preventDefault();
+	// };
+	// const [count, setcount] = useState(0);
+	// const [total, setTotal] = useState(1);
+	// useEffect(() => {alert("I will run on Each Render")});
+	// useEffect(() => {alert("I will run on First Render")}, []);
+	//  useEffect(() => {alert("I will run every time when count is updated")}, [count]);
+	//  useEffect(() => {alert("I will run every time when count or total is updated is updated")}, [count, total]);
+	// useEffect(() => {
+	// 	alert("I will run every time when count or total is updated is updated");
+	// 	return () => {
+	// 		alert("Component Unmounted");
+	// 	};
+	// }, [count, total]);
+
+	// const handleClick = () => {
+	// 	setcount((count) => count + 1);
+	// };
+	// const handleTotal = () => {
+	// 	setTotal((total) => total + 1);
+	// };
 
 	return (
 		<div>
-			
+			{/* <button onClick={handleClick}>Update Count!!</button>
+			<p>Count is : {count}</p>
+			<br />
+			<button onClick={handleTotal}>Update Total!!</button>
+			<p>Count is : {total}</p> */}
+			{/* <div>Hello World</div> */}
 
+			{/* <div>
+				<form onSubmit={handleSubmit}>
+					<input type="text" onChange={handleChange} value={value} />
+					<button type="submit">Add Item</button>
+				</form>
+			</div>
+			<div>
+				<ul>
+					{listItems.map((item) => (
+						<li key={item}>{item}</li>
+					))}
+				</ul>
+			</div>
+			 */}
 
+			{/* <div>
+				<input type="checkbox" onClick={(e) => {e.preventDefault()}} />
+				<label>Normal checkbox behaviour!!</label>
+			</div> */}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		
 			{/* // <div className="flex justify-center items-center min-h-screen bg-gray-100">
 		// 	<div className="w-full max-w-md p-8 bg-white shadow-xl rounded-xl [&_form]:flex [&_form]:flex-col [&_form]:gap-5 [&_label]:block [&_label]:text-sm [&_label]:font-semibold [&_label]:text-gray-700 [&_label]:text-left [&_input]:w-full [&_input]:p-2.5 [&_input]:border [&_input]:border-gray-300 [&_input]:rounded-lg [&_input]:focus:ring-2 [&_input]:focus:ring-blue-500 [&_input]:outline-none [&_input[type=submit]]:bg-blue-600 [&_input[type=submit]]:font-bold [&_input[type=submit]]:text-white [&_input[type=submit]]:cursor-pointer [&_input[type=submit]]:hover:bg-blue-700 [&_input[type=submit]]:transition-colors [&_input[type=submit]]:mt-2">
 		// 		<form onSubmit={handleSubmit(onSubmit)}>
