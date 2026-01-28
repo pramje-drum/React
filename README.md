@@ -35,4 +35,11 @@
 - Now will learn API Fetching and Error Handling in React.
 - called an API using using fetch method and useEffect
 - fetched api using async await plus try and catch method!!
-- 
+- now will learn to fetch api using axios library
+- used axios library to call an API!!
+- Loading States in API Handling.
+- React Routing.
+
+# Day-5
+- Redux and Redux toolkit overview.
+

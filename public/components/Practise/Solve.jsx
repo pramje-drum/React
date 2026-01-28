@@ -4,6 +4,7 @@ import Solve2 from "./Solve2.jsx";
 // import React, { useState } from "react";
 // import { useForm } from "react-hook-form";
 import { Dummy_JSON } from "../URLS.jsx";
+import axios from "axios";
 // const INITIAL_LIST = [];
 
 const Solve = () => {
@@ -91,29 +92,50 @@ const Solve = () => {
 	// 		.catch((error) => console.log("OOPS some Error Occured!" + error));
 	// }, [item]);
 
+	// const [item, setItem] = useState(true);
+
+	// const getData = async () => {
+	// 	try {
+	// 		let response = await fetch(Dummy_JSON);
+	// 		if (!response.ok) throw new Error("Network not Responding");
+	// 		let Data = await response.json();
+	// 		console.log(Data);
+	// 	} catch (error) {
+	// 		console.log(error);
+	// 	} finally {
+	// 		alert("Operation Completed!!");
+	// 	}
+	// };
+
+	// useEffect(() => {
+	// 	getData();
+	// }, [item]);
+
 	const [item, setItem] = useState(true);
-
-	const getData = async () => {
-		try {
-			let response = await fetch(Dummy_JSON);
-			if (!response.ok) throw new Error("Network not Responding");
-			let Data = await response.json();
-			console.log(Data);
-		} catch (error) {
-			console.log(error);
-		} finally {
-			alert("Operation Completed!!");
-		}
-	};
-
+	const [loading, setLoading] = useState(true); 
+	const [error, setError] = useState(false)
 	useEffect(() => {
-		getData();
+		axios
+			.get(Dummy_JSON)
+			.then((res) => console.log(res.data))
+			// .then(() => alert("Successfully Completed!!"))
+			.then(() => setLoading(false))
+			.catch((error) => {
+				console.log("OOP's some Error Occured" + error);
+				// alert("Some Error Occured!!");
+				setError(true)
+				setLoading(false)
+			});
 	}, [item]);
+
 	return (
 		<div>
 			<button onClick={() => setItem(!item)} className="bg-gray-500 border-2 ">
 				Change
 			</button>
+
+			{loading? (<p>Loading...</p>) : (<p>Success!!</p>)}
+			{!error? (<p>{error}</p>) : (<p>Success!!</p>)}
 
 			{/* <button onClick={handleClick}>Update Count!!</button>
 			<p>Count is : {count}</p>
